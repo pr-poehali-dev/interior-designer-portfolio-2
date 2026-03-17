@@ -341,7 +341,7 @@ export default function Index() {
               ))}
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }}>
-              {[["Жилых проектов", "65+"], ["Коммерческих", "15+"], ["Стран", "4"], ["Наград", "15"]].map(([label, val]) => (
+              {[["Жилых проектов", "20+"], ["Коммерческих", "15+"], ["Стран", "4"], ["Наград", "15"]].map(([label, val]) => (
                 <div key={label} style={{ paddingTop: "1rem", borderTop: "1px solid rgba(201,169,110,0.13)" }}>
                   <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 300, color: "#c9a96e", lineHeight: 1 }}>{val}</div>
                   <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.62rem", letterSpacing: "0.1em", color: "rgba(232,220,200,0.35)", textTransform: "uppercase", marginTop: "0.3rem" }}>{label}</div>
