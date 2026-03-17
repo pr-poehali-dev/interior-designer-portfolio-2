@@ -249,7 +249,7 @@ export default function Index() {
               <img
                 src="https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/52035d3e-d3e2-4651-a9d8-b07734939a5d.jpg"
                 alt="Людмила Соколова"
-                style={{ width: "100%", height: "270px", objectFit: "cover", objectPosition: "center top", display: "block", transition: "transform 0.7s ease" }}
+                style={{ width: "100%", height: "270px", objectFit: "contain", objectPosition: "center center", background: "#1a1714", display: "block", transition: "transform 0.7s ease" }}
                 onMouseEnter={e => ((e.currentTarget as HTMLImageElement).style.transform = "scale(1.04)")}
                 onMouseLeave={e => ((e.currentTarget as HTMLImageElement).style.transform = "scale(1)")}
               />
