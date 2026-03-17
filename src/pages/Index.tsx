@@ -136,7 +136,7 @@ export default function Index() {
         <div className="hidden md:flex" style={{ gap: "2rem" }}>
           {["hero", "portfolio", "about", "reviews", "contacts"].map((id, i) => (
             <button key={id} onClick={() => scrollTo(id)} className="nav-link">
-              {["Главная", "Портфолио", "О мне", "Отзывы", "Контакты"][i]}
+              {["Главная", "Портфолио", "Обо мне", "Отзывы", "Контакты"][i]}
             </button>
           ))}
         </div>
@@ -150,7 +150,7 @@ export default function Index() {
         <div style={{ position: "fixed", inset: 0, zIndex: 40, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "2rem", background: "rgba(15,13,11,0.97)" }}>
           {["hero", "portfolio", "about", "reviews", "contacts"].map((id, i) => (
             <button key={id} onClick={() => scrollTo(id)} className="nav-link" style={{ fontSize: "0.9rem" }}>
-              {["Главная", "Портфолио", "О мне", "Отзывы", "Контакты"][i]}
+              {["Главная", "Портфолио", "Обо мне", "Отзывы", "Контакты"][i]}
             </button>
           ))}
         </div>
