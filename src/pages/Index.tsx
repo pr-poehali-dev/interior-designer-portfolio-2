@@ -11,7 +11,11 @@ const IMAGES = {
 };
 
 const projects = [
-  { id: 1, title: "Квартира на Патриарших", area: "120 м²", style: "Современный", room: "Гостиная", img: IMAGES.living, year: "2024" },
+  { id: 1, title: "Апартаменты у моря в Крыму", area: "120 м²", style: "Современный", room: "Гостиная", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/1e8dbbe1-68e2-4bb9-9339-23c1a1b352e6.jpg", year: "2024" },
+  { id: 10, title: "Апартаменты у моря в Крыму", area: "120 м²", style: "Современный", room: "Спальня", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/d5ddacc9-52c3-4490-bd75-462b127b24bb.jpg", year: "2024" },
+  { id: 11, title: "Апартаменты у моря в Крыму", area: "120 м²", style: "Современный", room: "Спальня", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/3c5a44ef-f8ba-4da6-b63b-22d39ae2d461.jpg", year: "2024" },
+  { id: 12, title: "Апартаменты у моря в Крыму", area: "120 м²", style: "Современный", room: "Спальня", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/a4c053cd-b582-479a-9c11-ea7aefefdeb2.jpg", year: "2024" },
+  { id: 13, title: "Апартаменты у моря в Крыму", area: "120 м²", style: "Современный", room: "Кухня", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/0b99ad6a-0dcc-4eb2-9bab-0e87452f6367.jpg", year: "2024" },
   { id: 2, title: "Загородный дом", area: "280 м²", style: "Скандинавский", room: "Кухня", img: IMAGES.dining, year: "2024" },
   { id: 3, title: "Дом у моря", area: "200 м²", style: "Минимализм", room: "Гостиная", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/e8c416c5-38b9-4cf5-96ee-2d5801f77b0b.jpg", year: "2023" },
   { id: 7, title: "Дом у моря", area: "200 м²", style: "Минимализм", room: "Терраса", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/80726c36-1819-4550-9871-2af1306169c3.jpg", year: "2023" },
