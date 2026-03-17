@@ -233,12 +233,35 @@ export default function Index() {
       {/* ABOUT */}
       <section id="about" style={{ padding: "6rem 2rem", borderTop: "1px solid rgba(201,169,110,0.1)" }} className="md:px-16 lg:px-24">
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "4rem", alignItems: "center" }} className="lg:grid-cols-2">
-          <div className="reveal" style={{ position: "relative" }}>
-            <div style={{ position: "absolute", top: -20, left: -20, width: "100%", height: "100%", border: "1px solid rgba(201,169,110,0.08)", pointerEvents: "none", zIndex: 0 }} />
-            <img src={IMAGES.portrait} alt="Людмила — дизайнер интерьера" style={{ position: "relative", zIndex: 1, width: "100%", height: "520px", objectFit: "cover", filter: "grayscale(12%) contrast(1.04)" }} />
-            <div style={{ position: "absolute", bottom: -16, right: -16, padding: "1.1rem 1.6rem", backgroundColor: "#161310", border: "1px solid rgba(201,169,110,0.18)", zIndex: 20 }}>
-              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2rem", fontWeight: 300, color: "#c9a96e", lineHeight: 1 }}>12+</div>
-              <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.6rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(232,220,200,0.35)", marginTop: "0.2rem" }}>лет практики</div>
+          <div className="reveal" style={{ position: "relative", display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "auto auto", gap: "0.75rem" }}>
+            {/* Большое фото слева — первое */}
+            <div style={{ gridColumn: "1", gridRow: "1 / 3", overflow: "hidden" }}>
+              <img
+                src="https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/1d02e99c-fb7e-4a1d-abf5-8b8b89c87a9c.jpg"
+                alt="Людмила Соколова"
+                style={{ width: "100%", height: "560px", objectFit: "cover", objectPosition: "center top", display: "block", transition: "transform 0.7s ease" }}
+                onMouseEnter={e => ((e.currentTarget as HTMLImageElement).style.transform = "scale(1.04)")}
+                onMouseLeave={e => ((e.currentTarget as HTMLImageElement).style.transform = "scale(1)")}
+              />
+            </div>
+            {/* Второе фото справа */}
+            <div style={{ gridColumn: "2", gridRow: "1", overflow: "hidden" }}>
+              <img
+                src="https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/52035d3e-d3e2-4651-a9d8-b07734939a5d.jpg"
+                alt="Людмила Соколова"
+                style={{ width: "100%", height: "270px", objectFit: "cover", objectPosition: "center top", display: "block", transition: "transform 0.7s ease" }}
+                onMouseEnter={e => ((e.currentTarget as HTMLImageElement).style.transform = "scale(1.04)")}
+                onMouseLeave={e => ((e.currentTarget as HTMLImageElement).style.transform = "scale(1)")}
+              />
+            </div>
+            {/* Бейдж */}
+            <div style={{ gridColumn: "2", gridRow: "2", padding: "1.4rem", backgroundColor: "#161310", border: "1px solid rgba(201,169,110,0.18)", display: "flex", flexDirection: "column", justifyContent: "center", height: "282px" }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 300, color: "#c9a96e", lineHeight: 1 }}>12+</div>
+              <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.58rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(232,220,200,0.35)", marginTop: "0.5rem" }}>лет практики</div>
+              <div style={{ width: 32, height: 1, background: "rgba(201,169,110,0.3)", margin: "1rem 0" }} />
+              <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.75rem", color: "rgba(232,220,200,0.45)", lineHeight: 1.7 }}>
+                Москва · Европа<br />Авторские интерьеры
+              </div>
             </div>
           </div>
 
