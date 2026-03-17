@@ -43,10 +43,18 @@ const projects = [
       "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/ade932a1-65e6-4245-b347-3614beec5c79.jpg",
     ]
   },
+  {
+    id: 7, title: "Торговые павильоны для администрации г.Севастополь", area: "–", style: "Современный", room: "Коммерческий", year: "2024",
+    imgs: [
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/69549ec6-c6f0-497d-9c7b-fbe3db611977.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/95774e79-923c-4ce3-96fe-f48f3bbe6e69.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/ba7fabaf-e4fd-478d-ab1e-baca84ecf8f0.jpg",
+    ]
+  },
 ];
 
 const styleFilters = ["Все", "Современный", "Скандинавский", "Минимализм", "Эклектика"];
-const roomFilters = ["Все помещения", "Гостиная", "Спальня", "Кухня", "Ванная", "Терраса", "Холл", "Кладовая"];
+const roomFilters = ["Все помещения", "Гостиная", "Спальня", "Кухня", "Ванная", "Терраса", "Холл", "Кладовая", "Коммерческий"];
 
 const reviews = [
   { name: "Анна С.", text: "Людмила превратила нашу квартиру в место, куда хочется возвращаться. Она слышит и понимает тебя с полуслова.", role: "Клиент, 2024" },
