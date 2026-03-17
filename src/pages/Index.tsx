@@ -135,11 +135,7 @@ export default function Index() {
           <p className="fade-in-up delay-1" style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.62rem", letterSpacing: "0.32em", textTransform: "uppercase", color: "#c9a96e", marginBottom: "1.5rem" }}>
             Дизайнер интерьера
           </p>
-          <h1 className="fade-in-up delay-2" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(3.5rem, 9vw, 8rem)", fontWeight: 300, lineHeight: 0.92, color: "#e8dcc8", marginBottom: "2rem" }}>
-            Людмила<br />
-            <em style={{ color: "#c9a96e", fontStyle: "italic" }}>Создаю</em><br />
-            пространства
-          </h1>
+          <h1 className="fade-in-up delay-2" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(3.5rem, 9vw, 8rem)", fontWeight: 300, lineHeight: 0.92, color: "#e8dcc8", marginBottom: "2rem" }}>Людмила Соколова</h1>
           <p className="fade-in-up delay-3" style={{ fontFamily: "'Golos Text', sans-serif", fontWeight: 300, fontSize: "1rem", color: "rgba(232,220,200,0.6)", maxWidth: 420, lineHeight: 1.9, marginBottom: "2.5rem" }}>
             Каждый проект — это диалог между архитектурой и человеком. Я создаю интерьеры с характером и историей.
           </p>
