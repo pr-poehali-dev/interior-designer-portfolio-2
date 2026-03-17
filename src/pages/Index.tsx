@@ -11,15 +11,20 @@ const IMAGES = {
 };
 
 const projects = [
-  { id: 1, title: "Дом у моря в Крыму", area: "120 м²", style: "Современный", room: "Гостиная", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/7e615a0d-4926-4b6b-a4f3-635ce227d4c4.jpg", year: "2024" },
-  { id: 7, title: "Дом у моря в Крыму", area: "120 м²", style: "Современный", room: "Гостиная", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/d27c56b7-5fdc-4101-ae58-0b228e8ee782.jpg", year: "2024" },
-  { id: 8, title: "Дом у моря в Крыму", area: "120 м²", style: "Современный", room: "Терраса", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/3482e321-d1e5-41bc-ada9-b9761bf6ad19.jpg", year: "2024" },
-  { id: 9, title: "Дом у моря в Крыму", area: "120 м²", style: "Современный", room: "Холл", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/bd66e13a-aaf6-4523-b55e-fe24bdb16594.jpg", year: "2024" },
-  { id: 10, title: "Дом у моря в Крыму", area: "120 м²", style: "Современный", room: "Кладовая", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/831c2e2c-bcc7-49e5-821a-cd87252383cc.jpg", year: "2024" },
-  { id: 2, title: "Загородный дом", area: "280 м²", style: "Скандинавский", room: "Кухня", img: IMAGES.dining, year: "2024" },
-  { id: 3, title: "Пентхаус в Сити", area: "200 м²", style: "Минимализм", room: "Спальня", img: IMAGES.bedroom, year: "2023" },
-  { id: 4, title: "Апартаменты у моря", area: "85 м²", style: "Современный", room: "Кухня", img: IMAGES.kitchen, year: "2023" },
-  { id: 5, title: "Таунхаус в Переделкино", area: "160 м²", style: "Эклектика", room: "Ванная", img: IMAGES.bathroom, year: "2023" },
+  {
+    id: 1, title: "Дом у моря в Крыму", area: "120 м²", style: "Современный", room: "Гостиная", year: "2024",
+    imgs: [
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/7e615a0d-4926-4b6b-a4f3-635ce227d4c4.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/d27c56b7-5fdc-4101-ae58-0b228e8ee782.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/3482e321-d1e5-41bc-ada9-b9761bf6ad19.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/bd66e13a-aaf6-4523-b55e-fe24bdb16594.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/831c2e2c-bcc7-49e5-821a-cd87252383cc.jpg",
+    ]
+  },
+  { id: 2, title: "Загородный дом", area: "280 м²", style: "Скандинавский", room: "Кухня", year: "2024", imgs: [IMAGES.dining] },
+  { id: 3, title: "Пентхаус в Сити", area: "200 м²", style: "Минимализм", room: "Спальня", year: "2023", imgs: [IMAGES.bedroom] },
+  { id: 4, title: "Апартаменты у моря", area: "85 м²", style: "Современный", room: "Кухня", year: "2023", imgs: [IMAGES.kitchen] },
+  { id: 5, title: "Таунхаус в Переделкино", area: "160 м²", style: "Эклектика", room: "Ванная", year: "2023", imgs: [IMAGES.bathroom] },
 ];
 
 const styleFilters = ["Все", "Современный", "Скандинавский", "Минимализм", "Эклектика"];
@@ -37,6 +42,7 @@ export default function Index() {
   const [isHover, setIsHover] = useState(false);
   const [styleFilter, setStyleFilter] = useState("Все");
   const [roomFilter, setRoomFilter] = useState("Все помещения");
+  const [activeImgs, setActiveImgs] = useState<Record<number, number>>({});
   const [activeReview, setActiveReview] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -207,22 +213,33 @@ export default function Index() {
           </div>
         ) : (
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1rem" }}>
-            {filtered.map((project, idx) => (
-              <div key={project.id} className="reveal project-card" style={{ height: idx % 3 === 0 ? "420px" : "300px", backgroundColor: "#161310" }}>
-                <img src={project.img} alt={project.title} />
-                <div className="project-overlay">
-                  <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.58rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#c9a96e", marginBottom: "0.35rem" }}>
-                    {project.style} · {project.year}
-                  </div>
-                  <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 400, color: "#e8dcc8", lineHeight: 1.2, marginBottom: "0.25rem" }}>
-                    {project.title}
-                  </div>
-                  <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.72rem", color: "rgba(232,220,200,0.45)" }}>
-                    {project.area}
+            {filtered.map((project, idx) => {
+              const activeIdx = activeImgs[project.id] ?? 0;
+              return (
+                <div key={project.id} className="reveal project-card" style={{ height: idx % 3 === 0 ? "420px" : "300px", backgroundColor: "#161310" }}>
+                  <img src={project.imgs[activeIdx]} alt={project.title} />
+                  <div className="project-overlay">
+                    <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.58rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#c9a96e", marginBottom: "0.35rem" }}>
+                      {project.style} · {project.year}
+                    </div>
+                    <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", fontWeight: 400, color: "#e8dcc8", lineHeight: 1.2, marginBottom: "0.25rem" }}>
+                      {project.title}
+                    </div>
+                    <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.72rem", color: "rgba(232,220,200,0.45)", marginBottom: project.imgs.length > 1 ? "0.6rem" : 0 }}>
+                      {project.area}
+                    </div>
+                    {project.imgs.length > 1 && (
+                      <div style={{ display: "flex", gap: "0.35rem", alignItems: "center" }}>
+                        {project.imgs.map((_, i) => (
+                          <button key={i} onClick={() => setActiveImgs(prev => ({ ...prev, [project.id]: i }))}
+                            style={{ cursor: "none", width: i === activeIdx ? 18 : 5, height: 5, background: i === activeIdx ? "#c9a96e" : "rgba(201,169,110,0.4)", border: "none", borderRadius: 3, transition: "all 0.3s ease", padding: 0 }} />
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </section>
