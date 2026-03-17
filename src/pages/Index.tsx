@@ -440,6 +440,7 @@ export default function Index() {
                 onFocus={e => (e.currentTarget.style.borderColor = "rgba(201,169,110,0.55)")}
                 onBlur={e => (e.currentTarget.style.borderColor = "rgba(201,169,110,0.18)")} />
               <button type="submit"
+                onClick={() => window.open("https://wa.me/79786760208?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20", "_blank")}
                 style={{ padding: "1rem 2rem", background: "#c9a96e", color: "#0f0d0b", fontFamily: "'Golos Text', sans-serif", fontSize: "0.68rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500, border: "none", cursor: "none", transition: "opacity 0.3s ease" }}
                 onMouseEnter={e => (e.currentTarget.style.opacity = "0.82")}
                 onMouseLeave={e => (e.currentTarget.style.opacity = "1")}>
