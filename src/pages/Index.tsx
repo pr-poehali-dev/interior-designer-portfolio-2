@@ -157,7 +157,7 @@ export default function Index() {
 
         {/* Stats */}
         <div className="fade-in-up delay-5 hidden md:flex" style={{ position: "absolute", bottom: "2.5rem", right: "2rem", gap: "2.5rem" }}>
-          {[["12+", "лет опыта"], ["80+", "проектов"], ["15", "наград"]].map(([num, label]) => (
+          {[["5+", "лет опыта"], ["80+", "проектов"], ["15", "наград"]].map(([num, label]) => (
             <div key={num} style={{ textAlign: "right" }}>
               <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.2rem", fontWeight: 300, color: "#c9a96e", lineHeight: 1 }}>{num}</div>
               <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.58rem", letterSpacing: "0.16em", textTransform: "uppercase", color: "rgba(232,220,200,0.35)", marginTop: "0.2rem" }}>{label}</div>
