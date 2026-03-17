@@ -190,12 +190,6 @@ export default function Index() {
           </p>
         </div>
 
-        {/* Style filters */}
-        <div className="reveal" style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem", marginBottom: "0.75rem" }}>
-          {styleFilters.map(f => (
-            <button key={f} className={`filter-btn${styleFilter === f ? " active" : ""}`} onClick={() => setStyleFilter(f)}>{f}</button>
-          ))}
-        </div>
         {/* Room filters */}
         <div className="reveal" style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem", marginBottom: "3rem" }}>
           {roomFilters.map(f => (
