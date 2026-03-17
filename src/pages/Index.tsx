@@ -21,8 +21,7 @@ const projects = [
       "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/831c2e2c-bcc7-49e5-821a-cd87252383cc.jpg",
     ]
   },
-  { id: 2, title: "Загородный дом", area: "280 м²", style: "Скандинавский", room: "Кухня", year: "2024", imgs: [IMAGES.dining] },
-  { id: 3, title: "Пентхаус в Сити", area: "200 м²", style: "Минимализм", room: "Спальня", year: "2023", imgs: [IMAGES.bedroom] },
+
   {
     id: 4, title: "Апартаменты у моря Крым 2025", area: "85 м²", style: "Современный", room: "Гостиная", year: "2025",
     imgs: [
@@ -33,7 +32,7 @@ const projects = [
       "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/8c7e92a5-e9ba-40a4-9e8d-219049e4384a.jpg",
     ]
   },
-  { id: 5, title: "Таунхаус в Переделкино", area: "160 м²", style: "Эклектика", room: "Ванная", year: "2023", imgs: [IMAGES.bathroom] },
+
   {
     id: 6, title: "Квартира Симферополь 2025", area: "65 м²", style: "Современный", room: "Гостиная", year: "2025",
     imgs: [
