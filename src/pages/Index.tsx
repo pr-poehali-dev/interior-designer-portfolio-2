@@ -246,10 +246,19 @@ export default function Index() {
             <p style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", color: "#c9a96e", marginBottom: "0.75rem" }}>
               О дизайнере
             </p>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.2rem, 4vw, 3.5rem)", fontWeight: 300, lineHeight: 1.1, color: "#e8dcc8", marginBottom: "1.5rem" }}>
-              Людмила<br />
-              <em style={{ fontStyle: "italic", color: "#c9a96e" }}>Козлова</em>
-            </h2>
+            <div style={{ display: "flex", alignItems: "center", gap: "1.2rem", marginBottom: "1.5rem" }}>
+              <div style={{ width: 72, height: 72, borderRadius: "50%", border: "2px solid rgba(201,169,110,0.5)", overflow: "hidden", flexShrink: 0 }}>
+                <img
+                  src="https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/d9d094d1-26b7-4a51-80ff-c111b8797363.jpg"
+                  alt="Людмила Соколова"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
+                />
+              </div>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.2rem, 4vw, 3.5rem)", fontWeight: 300, lineHeight: 1.1, color: "#e8dcc8" }}>
+                Людмила<br />
+                <em style={{ fontStyle: "italic", color: "#c9a96e" }}>Соколова</em>
+              </h2>
+            </div>
             <div style={{ width: 48, height: 1, background: "linear-gradient(90deg, #c9a96e, transparent)", marginBottom: "1.8rem" }} />
             <p style={{ fontFamily: "'Golos Text', sans-serif", fontWeight: 300, fontSize: "0.93rem", color: "rgba(232,220,200,0.65)", lineHeight: 2, marginBottom: "1.2rem" }}>
               Я убеждена: хороший интерьер — это не набор красивых предметов, а живая среда, которая отражает личность хозяина. Каждый проект начинается с долгого разговора.
