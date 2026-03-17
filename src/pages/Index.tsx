@@ -34,6 +34,16 @@ const projects = [
     ]
   },
   { id: 5, title: "Таунхаус в Переделкино", area: "160 м²", style: "Эклектика", room: "Ванная", year: "2023", imgs: [IMAGES.bathroom] },
+  {
+    id: 6, title: "Квартира Симферополь 2025", area: "65 м²", style: "Современный", room: "Гостиная", year: "2025",
+    imgs: [
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/d4caba8a-0422-464b-b02a-d94f5dc5e5b2.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/0673c3b2-562b-4ab0-9057-7da17280e34d.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/29803bd8-6c89-4fa1-ae04-573c00c5dd57.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/26db2dd6-f61c-4ddb-910e-91d157d48d4c.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/ade932a1-65e6-4245-b347-3614beec5c79.jpg",
+    ]
+  },
 ];
 
 const styleFilters = ["Все", "Современный", "Скандинавский", "Минимализм", "Эклектика"];
