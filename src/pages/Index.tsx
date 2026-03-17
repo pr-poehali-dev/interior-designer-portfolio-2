@@ -415,7 +415,7 @@ export default function Index() {
               {[
                 { icon: "Phone", label: "+7 (999) 123-45-67" },
                 { icon: "Mail", label: "ludmila@design.ru" },
-                { icon: "MapPin", label: "Москва, Россия" },
+                { icon: "MapPin", label: "Крым, Россия" },
               ].map(item => (
                 <div key={item.label} style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
                   <div style={{ width: 40, height: 40, border: "1px solid rgba(201,169,110,0.22)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, color: "#c9a96e" }}>
