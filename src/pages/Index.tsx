@@ -131,7 +131,7 @@ export default function Index() {
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(15,13,11,0.92) 0%, rgba(15,13,11,0.35) 55%, rgba(15,13,11,0.78) 100%)" }} />
         </div>
         <div style={{ position: "absolute", right: "2rem", top: "50%", transform: "translateY(-50%)", writingMode: "vertical-rl", fontFamily: "'Golos Text', sans-serif", fontSize: "0.58rem", letterSpacing: "0.28em", color: "rgba(201,169,110,0.35)", textTransform: "uppercase" }} className="hidden lg:block">
-          Интерьерный дизайн · Москва
+          Интерьерный дизайн · Крым, Россия
         </div>
 
         <div style={{ position: "relative", zIndex: 10, padding: "0 2rem 0 2rem", maxWidth: "900px" }} className="md:pl-16 lg:pl-24">
