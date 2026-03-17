@@ -11,16 +11,19 @@ const IMAGES = {
 };
 
 const projects = [
-  { id: 1, title: "Квартира на Патриарших", area: "120 м²", style: "Современный", room: "Гостиная", img: IMAGES.living, year: "2024" },
+  { id: 1, title: "Дом у моря в Крыму", area: "120 м²", style: "Современный", room: "Гостиная", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/7e615a0d-4926-4b6b-a4f3-635ce227d4c4.jpg", year: "2024" },
+  { id: 7, title: "Дом у моря в Крыму", area: "120 м²", style: "Современный", room: "Гостиная", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/d27c56b7-5fdc-4101-ae58-0b228e8ee782.jpg", year: "2024" },
+  { id: 8, title: "Дом у моря в Крыму", area: "120 м²", style: "Современный", room: "Терраса", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/3482e321-d1e5-41bc-ada9-b9761bf6ad19.jpg", year: "2024" },
+  { id: 9, title: "Дом у моря в Крыму", area: "120 м²", style: "Современный", room: "Холл", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/bd66e13a-aaf6-4523-b55e-fe24bdb16594.jpg", year: "2024" },
+  { id: 10, title: "Дом у моря в Крыму", area: "120 м²", style: "Современный", room: "Кладовая", img: "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/831c2e2c-bcc7-49e5-821a-cd87252383cc.jpg", year: "2024" },
   { id: 2, title: "Загородный дом", area: "280 м²", style: "Скандинавский", room: "Кухня", img: IMAGES.dining, year: "2024" },
   { id: 3, title: "Пентхаус в Сити", area: "200 м²", style: "Минимализм", room: "Спальня", img: IMAGES.bedroom, year: "2023" },
   { id: 4, title: "Апартаменты у моря", area: "85 м²", style: "Современный", room: "Кухня", img: IMAGES.kitchen, year: "2023" },
   { id: 5, title: "Таунхаус в Переделкино", area: "160 м²", style: "Эклектика", room: "Ванная", img: IMAGES.bathroom, year: "2023" },
-  { id: 6, title: "Студия на Пречистенке", area: "65 м²", style: "Минимализм", room: "Гостиная", img: IMAGES.living, year: "2022" },
 ];
 
 const styleFilters = ["Все", "Современный", "Скандинавский", "Минимализм", "Эклектика"];
-const roomFilters = ["Все помещения", "Гостиная", "Спальня", "Кухня", "Ванная"];
+const roomFilters = ["Все помещения", "Гостиная", "Спальня", "Кухня", "Ванная", "Терраса", "Холл", "Кладовая"];
 
 const reviews = [
   { name: "Анна С.", text: "Людмила превратила нашу квартиру в место, куда хочется возвращаться. Она слышит и понимает тебя с полуслова.", role: "Клиент, 2024" },
