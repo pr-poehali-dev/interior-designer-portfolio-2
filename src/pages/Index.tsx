@@ -413,7 +413,7 @@ export default function Index() {
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "1.2rem" }}>
               {[
-                { icon: "Phone", label: "+7 (999) 123-45-67" },
+                { icon: "Phone", label: "+7 978 676 0208" },
                 { icon: "Mail", label: "ludmila@design.ru" },
                 { icon: "MapPin", label: "Крым, Россия" },
               ].map(item => (
