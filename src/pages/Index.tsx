@@ -23,7 +23,16 @@ const projects = [
   },
   { id: 2, title: "Загородный дом", area: "280 м²", style: "Скандинавский", room: "Кухня", year: "2024", imgs: [IMAGES.dining] },
   { id: 3, title: "Пентхаус в Сити", area: "200 м²", style: "Минимализм", room: "Спальня", year: "2023", imgs: [IMAGES.bedroom] },
-  { id: 4, title: "Апартаменты у моря", area: "85 м²", style: "Современный", room: "Кухня", year: "2023", imgs: [IMAGES.kitchen] },
+  {
+    id: 4, title: "Апартаменты у моря Крым 2025", area: "85 м²", style: "Современный", room: "Гостиная", year: "2025",
+    imgs: [
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/3ffc27e2-72e1-4aeb-9e4f-05a04b1f0b81.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/6c96b578-1b35-41e6-b913-89264a2fc47e.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/e0246eac-b687-4703-a215-736d0c4f2dc1.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/58f37d2b-14f6-4f0e-819d-e8b7de1b2c81.jpg",
+      "https://cdn.poehali.dev/projects/6c550c2e-7d02-4220-9f88-3d3e5d45fc42/bucket/8c7e92a5-e9ba-40a4-9e8d-219049e4384a.jpg",
+    ]
+  },
   { id: 5, title: "Таунхаус в Переделкино", area: "160 м²", style: "Эклектика", room: "Ванная", year: "2023", imgs: [IMAGES.bathroom] },
 ];
 
