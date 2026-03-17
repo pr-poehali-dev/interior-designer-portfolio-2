@@ -300,7 +300,7 @@ export default function Index() {
               <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.58rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(232,220,200,0.35)", marginTop: "0.5rem" }}>лет практики</div>
               <div style={{ width: 32, height: 1, background: "rgba(201,169,110,0.3)", margin: "1rem 0" }} />
               <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.75rem", color: "rgba(232,220,200,0.45)", lineHeight: 1.7 }}>
-                Москва · Европа<br />Авторские интерьеры
+                Крым · Россия<br />Авторские интерьеры
               </div>
             </div>
           </div>
