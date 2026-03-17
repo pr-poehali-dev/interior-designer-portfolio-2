@@ -296,7 +296,7 @@ export default function Index() {
             </div>
             {/* Бейдж */}
             <div style={{ gridColumn: "2", gridRow: "2", padding: "1.4rem", backgroundColor: "#161310", border: "1px solid rgba(201,169,110,0.18)", display: "flex", flexDirection: "column", justifyContent: "center", height: "282px" }}>
-              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 300, color: "#c9a96e", lineHeight: 1 }}>12+</div>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8rem", fontWeight: 300, color: "#c9a96e", lineHeight: 1 }}>5+</div>
               <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.58rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(232,220,200,0.35)", marginTop: "0.5rem" }}>лет практики</div>
               <div style={{ width: 32, height: 1, background: "rgba(201,169,110,0.3)", margin: "1rem 0" }} />
               <div style={{ fontFamily: "'Golos Text', sans-serif", fontSize: "0.75rem", color: "rgba(232,220,200,0.45)", lineHeight: 1.7 }}>
