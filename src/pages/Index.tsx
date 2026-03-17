@@ -286,9 +286,14 @@ export default function Index() {
             <p style={{ fontFamily: "'Golos Text', sans-serif", fontWeight: 300, fontSize: "0.93rem", color: "rgba(232,220,200,0.65)", lineHeight: 2, marginBottom: "1.2rem" }}>
               Я убеждена: хороший интерьер — это не набор красивых предметов, а живая среда, которая отражает личность хозяина. Каждый проект начинается с долгого разговора.
             </p>
-            <p style={{ fontFamily: "'Golos Text', sans-serif", fontWeight: 300, fontSize: "0.93rem", color: "rgba(232,220,200,0.45)", lineHeight: 2, marginBottom: "2.5rem" }}>
-              Окончила Московский архитектурный институт, прошла стажировку в миланских студиях. Работаю с жилыми и коммерческими проектами по всей России и Европе.
-            </p>
+            <p style={{ fontFamily: "'Golos Text', sans-serif", fontWeight: 300, fontSize: "0.93rem", color: "rgba(232,220,200,0.45)", lineHeight: 2, marginBottom: "2.5rem" }}>Образование: 
+
+- Санкт-Петербургский гуманитарный университет профсоюзов, Алматинский филиал. С.К.Д. (Социально-культурная деятельность) 2005
+- Алтайский государственный технический университет им. И.И. Ползунова (АлтГТУ) 
+- Академия дизайна Марианны Турбиной, Архитектор дизайнер,2022 - 2023
+- Школа Алексея Меркулова,  Использование ARCHICAD на 100%, 2023
+
+</p>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }}>
               {[["Жилых проектов", "65+"], ["Коммерческих", "15+"], ["Стран", "4"], ["Наград", "15"]].map(([label, val]) => (
                 <div key={label} style={{ paddingTop: "1rem", borderTop: "1px solid rgba(201,169,110,0.13)" }}>
